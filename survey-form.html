@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>Survey Form</title>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<style type="text/css">
+	body{
+		font-family: Open Sans, monospace;
+		background-color: #A9D7D1;
+	}
+	#title {
+		text-align: center;
+	}
+	#form-outer {
+		background-color: #f3f3f3; 
+		margin: 0px 10%;
+		text-align: center;
+		padding: 10px;
+		border-radius: 5px;
+	}
+	#survey-form {
+		border-width: 0px;
+	}
+	.survey-item {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "l i";
+		grid-gap: 10px;
+	}
+
+	.item-label {
+		grid-area: l;
+		justify-self: end;
+		align-self: start;
+		text-align: right;
+	}
+	.item-input {
+		grid-area: i;
+		justify-self: start;
+		text-align: left;
+	}
+	#submit{
+		margin: 10px auto;
+		background-color: #59ACE0;
+		color: white;
+		border: 0px;
+		border-radius: 5px;
+		font-size: 14;
+		padding: 10px;
+	}
+	
+
+</style>
+</head>
+<body>
+<h1 id = "title">Survey Form</h1>
+<main id = "form-outer">
+<p id ="description">Let us know how we can improve freeCodeCamp</p>
+<form id ="survey-form" action="/submit-survey">
+	<div class = "survey-item">
+		<div class = "item-label">
+			<label id = "name-label" for = "name">* Name: </label>
+		</div>
+		<div class = "item-input">
+			<input type="text" id = "name" name="name" placeholder="Enter your name" required>
+		</div>
+	</div>
+	<div class = "survey-item">
+		<div class = "item-label">
+			<label id = "email-label" for = "email">* Email: </label>
+		</div>
+		<div class = "item-input">
+			<input type="email" id = "email" name="email" placeholder="Enter your email" required>
+		</div>
+		</div>
+	<div class = "survey-item">
+		<div class = "item-label">
+			<label id = "number-label" for = "email">* Age: </label>
+		</div>
+		<div class = "item-input">
+			<input type="number" id = "number" name="age" placeholder="Age" min="1" max="150" required>
+		</div>
+	</div>
+	<div class = "survey-item">
+		<div class = "item-label">
+			<label id = "dropdown-label" for = "role">* Which option best describes your current role?: </label>
+		</div>
+		<div class = "item-input">
+			<select id = "dropdown" name="role">
+				<option value = "student">Student </option>
+				<option value = "full-time">Full-time Job </option>
+				<option value = "unemployed">Unemployed </option>
+			</select> 
+		</div>
+	</div>
+	<div class = "survey-item">
+		<div class = "item-label">
+			* How likely is that you would recommend freeCodeCamp to a friend?
+		</div>
+		<div class = "item-input">
+			<label for = "definitely"><input type="radio" name="radio-buttons" value = "1" checked>Definitely</label><br>
+			<label for = "maybe"><input type="radio" name="radio-buttons" value = "2">Maybe</label><br>
+			<label for = "not-sure"><input type="radio" name="radio-buttons" value = "3">Not sure</label><br>
+		</div>
+	</div>
+	<div class = "survey-item">
+		<div class = "item-label">
+			Things that should be improved in the future <br>
+			(Check all that apply):
+		</div>
+		<div class = "item-input">
+			<label for = "front-end-projects"><input type="checkbox" name="checkboxes" value = "1" checked>Front-end Projects</label><br>
+			<label for = "back-end-projects"><input type="checkbox" name="checkboxes" value = "2">Back-end Projects</label><br>
+			<label for = "videos"><input type="checkbox" name="checkboxes" value = "3">Videos</label><br>
+		</div>
+	</div>
+	<div class = "survey-item">
+		<div class = "item-label">
+			<label id = "text-label" for = "text"> Comments: </label>
+		</div>
+		<div class = "item-input">
+			<textarea id = "comments" class="input-field" name="comments" placeholder="Enter your comments here"></textarea>
+		</div>
+	</div>
+	<button id = "submit">Submit</button>
+
+</form>
+</main>
+</body>
+</html>
