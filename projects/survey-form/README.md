@@ -27,4 +27,4 @@ Build a CodePen.io app for a survey form that is functionally similar to this: h
 
 Run all user story tests by forking [this CodePen pen](http://codepen.io/freeCodeCamp/pen/MJjpwO). The code is expected to fulfill the above user stories and get all of the tests to pass.
 
-I chose to make a the same survey form as in the example codepen app but by using CSS grid. Live version here that passes all tests: https://codepen.io/pdwarkanath/full/rPNMXE
+I chose to make the same survey form as in the example codepen app but by using CSS grid. Live version here that passes all tests: https://codepen.io/pdwarkanath/full/rPNMXE
