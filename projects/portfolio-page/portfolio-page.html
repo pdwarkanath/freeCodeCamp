@@ -1,0 +1,316 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<head>
+	<meta charset="utf-8">
+	<title> Dwarkanath Prabhu </title>
+
+<!-- CSS & JS -->	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+
+<style type="text/css">
+	html,body,header,.viewport {
+		height: 100%;
+		
+	}
+
+	.content {
+		min-height: 100%;
+	}
+
+	.navbar-aggie{
+		background-color: #500000;
+		color: #FFFFFF;
+		font-family: 'Open Sans';
+	}
+	@media (min-height: 600px){
+	  .navbar-aggie {
+		font-size: 2vh;
+	}
+	}
+	.navbar-collapse {
+	  background-color: #500000;
+	}
+	.navbar-default{
+	  border:0;
+	}
+	.navbar-default .navbar-brand{
+	color:#fff
+	}
+
+	.nav-link{
+		background-color: #500000;
+		color: #FFFFFF;
+		
+	}
+
+	.navbar-default .navbar-nav>li>a{
+	color:#fff
+	}
+
+	.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover {
+		background-color: #450000;
+		color: #FFFFFF;
+		
+	}
+
+	.nav > li > a:hover, .nav > li > a:focus {
+		background-color: #400000;
+		color: #FFFFFF;
+	}
+
+
+
+	.nav-link {
+		margin-right: 15px;
+		
+	}
+
+	.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:hover{
+	color:#5e5e5e;
+	background-color:transparent
+	}
+	.viewport {
+	  height: 100vh;
+	}
+	#welcome-section {
+	  
+		background-image: url("assets/bg1.jpg");
+		background-position: center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		background-color:#464646;
+	}
+
+	.viewport, .content {
+		display: table;
+		text-align: center;
+		width: 100%;
+	}
+
+	.header-content, .other-content, .contact-content {
+		display: table-cell;
+		vertical-align: middle;
+		
+	}
+	.header-content {
+		margin-top: 15%;
+		margin-bottom: 10%;
+	}
+	.other-content, .contact-content {
+		margin-top: 5%;
+		margin-bottom: 5%;
+
+	}
+		
+	.header-content > h1 {
+		text-align: center;
+		margin-top: 20px;
+		color: #fff;
+		font-family: 'Open Sans';
+		font-weight: bold;
+	}
+
+	.header-content > p {
+		margin-top: 20px;
+		color: #fff;
+		font-family: 'Open Sans';
+		padding-left: 16.666667%;
+		padding-right: 16.666667%;
+	}
+
+	.other-content > p {
+		
+		text-align: left;
+		font-family: 'Open Sans';
+		padding-left: 16.666667%;
+		padding-right: 16.666667%;
+	}
+
+	.other-content > h2 {
+		text-align: center;
+		margin-top: 20px;
+		color: #fff;
+		font-family: 'Open Sans';
+		font-weight: bold;
+	}
+
+	.contact-content > p {
+		
+		text-align: center;
+		font-family: 'Open Sans';
+		padding-left: 16.666667%;
+		padding-right: 16.666667%;
+	}
+	#email {
+		
+		text-align: center;
+		font-family: 'Open Sans';
+		
+	}
+
+
+	.other-content > ul {
+		
+		text-align: left;
+		font-family: 'Open Sans';
+		padding-left: 16.666667%;
+		padding-right: 16.666667%;
+		margin-left: 40px;
+	}
+
+	.logo-size {
+		width: 50px;
+		height:50px;
+	}
+
+	.white-background {
+		background-color:#FFFFFF;
+	}
+
+	#about, #contact {
+		background-color:#D6D3C4;
+	}
+
+
+	.btn-aggie {
+		align-content: center;
+		border-color: #FFFFFF;
+		background-color: #5B6236;
+		color: #FFFFFF;
+		font-weight: bold;
+	}
+
+	.btn-aggie:hover {
+		border-color: #FFFFFF;
+		background-color: #707373;
+		color: #500000;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	.btn-margin {
+		margin-top:80%;
+	}
+
+	.img-responsive {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.btn-default,  .btn-default:hover {
+		font-family: 'Open Sans';
+	}
+</style>
+</head>
+
+  <body id = "page-top">
+
+
+    
+    <nav class="navbar navbar-default navbar-aggie navbar-fixed-top" id = "navbar">
+    <div class = "container-fluid">  
+      <div class = "navbar-header">
+      <button  type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-expanded"  aria-expanded="false" aria-controls="navbar">
+         <span class = "sr-only">Navigation</span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+      </button>
+        <a class = "navbar-brand navbar-aggie">Dwarkanath Prabhu</a>
+      </div>
+   
+      <div class="collapse navbar-collapse" id = "navbar">
+	  	<ul class="nav navbar-nav navbar-right">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#page-top">Home </a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#about">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#work">Work</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contact</a>
+	      </li>
+	    </ul>
+      </div>
+    </div>
+	</nav>
+
+<header class ="viewport" id = "welcome-section">
+
+<div class = "header-content col-xs-12">
+
+  <h1>Howdy!</h1>
+  <p>I'm Dwarkanath Prabhu. Welcome to my page. You can stalk me below:</p>
+  <a href ="https://www.facebook.com/dwarkanath.prabhu" class = "col-xs-2 col-xs-offset-2"><img src = "assets/FB-f-Logo__blue_50.png" class = "logo-size" alt = "Facebook"></a>
+  <a href ="https://twitter.com/dk_prabhu" class = "col-xs-2"><img src = "assets/Twitter_Logo_White_On_Blue.png" class = "logo-size" alt = "Twitter"></a>
+  <a href ="https://www.linkedin.com/in/dwarkanathprabhu/" class = "col-xs-2"><img src = "assets/In-2C-75px-R.png" class = "logo-size" alt = "LinkedIn"></a>
+  <a href ="https://github.com/pdwarkanath/" class = "col-xs-2" id = "profile-link" target="_blank"><img src = "assets/GitHub-Mark-64px.png" class = "logo-size white-background" alt = "GitHub"></a>
+ </div>
+ <div class ="col-xs-12">
+ <a href="#about" class="btn btn-lg btn-aggie">Know More</a>
+ </div>
+  
+  
+  
+ 
+</header>
+
+<div  id = "about">
+<section class = "content">
+	<div class = "other-content col-xs-12 col-md-4">
+		<img class = "img-responsive" src = "assets/dwarkanath-prabhu.jpg" alt = "My pic. Dwarkanath Prabhu"></img>
+	</div>
+	<div class = "other-content col-xs-12 col-md-8">	
+		<p>Howdy! I’m Dwarkanath Prabhu. I am a graduate student in Industrial and Systems Engineering (ISEN) at Texas A&ampM University, College Station. My previous experience includes 2.5 years at a consulting firm and 1.5 years at 2 different startups. Prior to that I completed my undergraduate course in Mechanical Engineering in India.</p>
+		</br>
+		<p>I enjoy watching soccer, specifically Arsenal Football Club which I have been a fan of for 16 years now. In my first semester here, I worked as a soccer official for the Intramural Leagues. I also enjoy stand-up comedy – watching and at times, performing. On weekends, I like visiting parks. The cover photo above is from the trail at Bee Creek Park in College Station.</p>
+		</br>
+		<p>Check out my blog and my social media profiles to know more about me. </p>
+		</br>
+		
+	</div>
+</section>
+</div>
+<div>
+<section class = "content" id = "work">
+	<div class = "other-content col-xs-12">	
+		<p>Currently I am working with <a href="http://www.ece.tamu.edu/~xqian/">Dr. Xiaoning Qian</a>, Associate Professor in the Dept. of Electrical & Computer Engineering (ECE). My research involves:</p>
+		<ul>
+		<li>Machine Learning</li>
+		<li>Computer Vision</li>
+		<li>Image Processing</li>
+		<li>Data Visualization</li>
+		<li>Optimization</li>
+		</ul>
+
+		<p>Other supporting work I have been involved in:</p>
+		<ul id = "projects">
+		<li class = "project-tile">Teaching CPLEX (<a href="CPLEXConcertTutorial.pdf">Manual</a>)</li>
+		<li>Building web apps</li>
+		</ul>
+		<p> I am a member of the <a href="https://maroonlink.tamu.edu/organization/aasg/">Texas A&ampM Secular Student Alliance</a> which I helped establish in 2017. It is the only atheist organization on campus.</p>
+		<a href = "DwarkanathPrabhuResume.pdf" class = "btn btn-lg btn-aggie"> Download Resume </a>
+		
+
+	</div>
+</section>
+</div>
+<div  id = "contact">
+<section class = "content">
+	<div class = "contact-content">
+	<p>Dwarkanath Prabhu</p>
+	<p>Email: <a href="mailto:pdwarkanath@tamu.edu">pdwarkanath@tamu.edu</a></p>
+
+	</div>
+</section>
+</div>
+</body>

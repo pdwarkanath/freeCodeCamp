@@ -14,6 +14,8 @@ The individual project folders have readme files that describe the projects in m
 1. [Tribute Page](projects/tribute-page) - Build a CodePen.io app for a tribute page. Live project here: https://codepen.io/pdwarkanath/full/EGqmro
 2. [Survey Form](projects/survey-form) - Build a CodePen.io app for a survey form. Live project here: https://codepen.io/pdwarkanath/full/rPNMXE
 3. [Landing Page](projects/landing-page) - Build a CodePen.io app for a product landing page. Live project here: https://codepen.io/pdwarkanath/full/ZwLpMV
+4. [Technical Documentation](projects/technical-documentation) - Build a CodePen.io app for a technical documentation page. Live project here: https://codepen.io/pdwarkanath/full/BMWYdY
+5. [Portfolio Page](projects/portfolio-page) - Build a CodePen.io app for a personal portfolio page. Live project here: https://codepen.io/pdwarkanath/full/LqWOQd
 
 
 ## Challenges
