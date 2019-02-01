@@ -6,9 +6,11 @@
 <style type="text/css">
 	body {
 		font-family: Open Sans, monospace;
+		background-color: lightgrey;
 	}
 	#header {
 		position: fixed;
+		height: 50px;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -17,6 +19,7 @@
 		justify-content: space-around;
 		align-items: center;
 		background-color: #f3f3f3;
+		z-index: 2;
 	}
 	#logo {
 		display: flex;
@@ -45,6 +48,28 @@
 		text-decoration: underline;
 		color: black;
 	}
+	main {
+		position: relative;
+		top: 50px;
+	}
+	#about {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 100vh;
+	}
+	@media (min-width: 800px) {
+	#about-description, #form {
+		max-width: 600px;
+		margin: auto;
+		text-align: center;
+	}
+	}
+	#about-description, #form {
+		max-width: 600px;
+		margin: auto;
+		text-align: center;
+	}
 	#video {
 		display: block;
 		max-width: 267px;
@@ -65,7 +90,14 @@
 		</nav>
 	</header>
 	<main>
-	<div id ="about">
+	
+	<div class="target" id ="about">
+		<p id ="about-description"> Olly iConix is the fanciest comedy club in Texas. Located in the Bryan - College Station Area. Check out our open mics and professional performances. </p>
+		<form id = "form" action = "https://www.freecodecamp.org/email-submit">
+			<label for = "email">Subscribe to our mailing list fo regular updates</label><br>
+			<input type="email" id = "email" name="email" placeholder="Enter your email" required><br>
+			<input id = "submit" type="submit" class = "button" value = "Subscribe">
+		</form>
 		<iframe id = "video" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FOllyiConix%2Fvideos%2F150759139210698%2F&show_text=0&width=267" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 	</div>
 	<div id ="events">
