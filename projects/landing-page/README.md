@@ -26,4 +26,4 @@ Build a CodePen.io app for a product landing page that is functionally similar t
 
 Run all user story tests by forking [this CodePen pen](http://codepen.io/freeCodeCamp/pen/MJjpwO). The code is expected to fulfill the above user stories and get all of the tests to pass.
 
-I chose to make a landing page for a comedy club. Live version here that passes all tests: 
+I chose to make a landing page for a comedy club. Live version here that passes all tests: https://codepen.io/pdwarkanath/full/ZwLpMV 
