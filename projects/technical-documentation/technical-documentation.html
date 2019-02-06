@@ -14,15 +14,41 @@
 		padding: 20px;
 		margin: 10px;
 	}
+	@media only screen and (max-width: 1200px) {
+		#navbar {
+		position: absolute;
+		top: 0;
+		max-height: 275px;
+		width: 100%;
+		border-style: solid;
+		border-width: 1px 0px 1px 0px;
+		border-color: black;
+		background-color: white;
+		}
+		#main-doc {
+		position: absolute;
+		top: 275px;
+		left: auto;
+		}
+
+	}
 	#navbar {
 		position: fixed;
 		left:0;
+		z-index: 1;
 	}
+	
 	nav > table {
+		width: 100%;
 		border-style: solid;
 		border-color: black;
 		border-width: 0px 0px 1px 0px;
+		margin: auto;
 	}
+	nav > header > h1 {
+		text-align: center;
+	}
+
 	.nav-cell {
 		border-style: solid;
 		border-color: black;
@@ -34,14 +60,11 @@
 		color: black;
 	}
 	#main-doc {
-		max-width: 666px;
+		padding-top: 1px; 
+		max-width: 600px;
 		margin: auto;
 	}
-	@media (min-height: 600px) {
-		#main-doc {
-			padding-top: 1px; 
-		}
-	} 
+	
 	</style>
 </head>
 <body>
