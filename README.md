@@ -23,4 +23,5 @@ The individual project folders have readme files that describe the projects in m
 Not all challenges are downloaded. Only those that introduce a new concept.
 
 1. [Responsive Web Design](challenges/responsive-web-design)
+2. [Javascript Algorithms and Data Structures](challenges/javascript-algorithms-data-structures)
 
