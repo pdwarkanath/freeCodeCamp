@@ -1,8 +1,11 @@
 <html>
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-	<title> Texas Power Generation Capacity Expansion Solutions Mapping App Documentation </title>
-	<style>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<title> Texas Power Generation Capacity Expansion Solutions Mapping App Documentation </title>
+<style>
+	html {
+		scroll-behavior: smooth;
+	}
 	body {
 		font-family: Open Sans, monospace;
 	}
@@ -14,30 +17,8 @@
 		padding: 20px;
 		margin: 10px;
 	}
-	@media only screen and (max-width: 1200px) {
-		#navbar {
-		position: absolute;
-		top: 0;
-		max-height: 275px;
-		width: 100%;
-		border-style: solid;
-		border-width: 1px 0px 1px 0px;
-		border-color: black;
-		background-color: white;
-		}
-		#main-doc {
-		position: absolute;
-		top: 275px;
-		left: auto;
-		}
 
-	}
-	#navbar {
-		position: fixed;
-		left:0;
-		z-index: 1;
-	}
-	
+
 	nav > table {
 		width: 100%;
 		border-style: solid;
@@ -61,16 +42,35 @@
 	}
 	#main-doc {
 		padding-top: 1px; 
-		max-width: 600px;
+		max-width: 900px;
 		margin: auto;
 	}
-	
-	</style>
+
+	@media  only screen and (min-width: 1200px) and (max-width: 1500px) {
+	#main-doc {
+	margin-left: 300px
+	}
+	}
+
+	@media only screen and (max-width: 1200px) {
+		.visible-large {
+		display: none;
+		}
+	}
+	@media only screen and (min-width: 1200px) {
+	#navbar {
+		position: fixed;
+		left:0;
+		z-index: 1;
+	}
+	}
+
+</style>
 </head>
 <body>
 <nav id = "navbar">
 	<header><h1>Shiny App Documentation</h1></header>
-	<table>
+	<table class="visible-large">
 		<tr><td class = "nav-cell"><a href = "#Abstract" class = "nav-link">Abstract</a></td></tr>
 		<tr><td class = "nav-cell"><a href = "#Introduction" class = "nav-link">Introduction</a></td></tr>
 		<tr><td class = "nav-cell"><a href = "#Data_Cleaning" class = "nav-link">Data Cleaning</a></td></tr>
