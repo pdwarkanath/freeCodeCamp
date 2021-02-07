@@ -1,0 +1,40 @@
+.navbar-aggie {
+	background-color: #500000;
+}
+.landing-page {
+	background-image: url("../assets/bg1.jpg");
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-color:#464646;
+}
+
+.logo-size {
+	height:50px;
+}
+.front-content {
+	position: relative;
+	top: 20%;
+}
+
+.even-viewport {
+	background-color:#D6D3C4;
+}
+
+.odd-viewport {
+	background-color: #FFFFFF;
+}
+
+.content {
+	max-width: 600px;
+}
+
+.offset-navbar-top{
+	height: 56px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
