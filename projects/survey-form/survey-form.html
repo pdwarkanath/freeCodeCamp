@@ -1,7 +1,6 @@
 <html>
 <head>
 <title>Survey Form</title>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 <style type="text/css">
 	body{
@@ -101,9 +100,9 @@
 			* How likely is that you would recommend freeCodeCamp to a friend?
 		</div>
 		<div class = "item-input">
-			<label for = "definitely"><input type="radio" name="radio-buttons" value = "1" checked>Definitely</label><br>
-			<label for = "maybe"><input type="radio" name="radio-buttons" value = "2">Maybe</label><br>
-			<label for = "not-sure"><input type="radio" name="radio-buttons" value = "3">Not sure</label><br>
+			<input type="radio" name="radio-buttons" id="definitely" value = "1"  checked><label for = "definitely">Definitely</label><br>
+			<input type="radio" name="radio-buttons" id="maybe" value = "2"><label for = "maybe">Maybe</label><br>
+			<input type="radio" name="radio-buttons" id="notsure" value = "3"><label for = "notsure">Not sure</label><br>
 		</div>
 	</div>
 	<div class = "survey-item">
@@ -112,9 +111,9 @@
 			(Check all that apply):
 		</div>
 		<div class = "item-input">
-			<label for = "front-end-projects"><input type="checkbox" name="checkboxes" value = "1" checked>Front-end Projects</label><br>
-			<label for = "back-end-projects"><input type="checkbox" name="checkboxes" value = "2">Back-end Projects</label><br>
-			<label for = "videos"><input type="checkbox" name="checkboxes" value = "3">Videos</label><br>
+			<input type="checkbox" name="checkboxes" id = "front-end-projects" value = "1" checked><label for = "front-end-projects">Front-end Projects</label><br>
+			<input type="checkbox" name="checkboxes" id = "back-end-projects" value = "2"><label for = "back-end-projects">Back-end Projects</label><br>
+			<input type="checkbox" name="checkboxes" id = "videos" value = "3"><label for = "videos">Videos</label><br>
 		</div>
 	</div>
 	<div class = "survey-item">
